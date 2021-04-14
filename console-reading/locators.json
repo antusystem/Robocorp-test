@@ -1,0 +1,8 @@
+{
+    "Ubuntu.Terminal": {
+        "confidence": 80.0,
+        "path": ".images/ubuntu-terminal-path.png",
+        "source": null,
+        "type": "image"
+    }
+}

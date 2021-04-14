@@ -1,0 +1,20 @@
+{
+    "Ubuntu.Search": {
+        "confidence": 80.0,
+        "path": ".images/ubuntu-search-path.png",
+        "source": null,
+        "type": "image"
+    },
+    "Ubuntu.SearchApp": {
+        "confidence": 80.0,
+        "path": ".images/ubuntu-searchapp-path.png",
+        "source": null,
+        "type": "image"
+    },
+    "Ubuntu.Terminal": {
+        "confidence": 80.0,
+        "path": ".images/ubuntu-terminal-path.png",
+        "source": null,
+        "type": "image"
+    }
+}
