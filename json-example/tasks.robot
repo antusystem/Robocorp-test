@@ -7,7 +7,9 @@ Library         RPA.JSON
 
 
 *** Keyword ***
-Cosas
+Stuff1
+    [Documentation]    Shows how to load a json  file called example.json, update one of its values, save it, and create a new json from a string.
+    ...    Only works with RCC, tested in rpaframework=9.5.0 and python 3.7.5
     ${json}=    Load JSON from file    ${CURDIR}${/}example.json
     Log    ${json}
     ${json}=    Update value to JSON    ${json}    $.Ordenes.clave    001002003
@@ -18,8 +20,10 @@ Cosas
     Log    Done.
 
 *** Keyword ***
-Cosas2
-    #Sirve solo con RCC al menos para la version 9.5.0
+Stuff2
+    [Documentation]    Shows how to load a json  file called example.json,  getting values from the json, add data to the json, delete data,
+    ...    update one of its values, save it, and create a new json from a string.
+    ...    Only works with RCC, tested in rpaframework=9.5.0 and python 3.7.5
     ${json}=    Load JSON from file    ${CURDIR}${/}example.json
     Log    ${json}
     ${first_order_id}=    Get value from JSON    ${json}    $.Ordenes
@@ -46,5 +50,6 @@ Cosas2
 Get all the names for all people
     Example Keyword
     Example Python Keyword
-    Cosas2
+    Stuff1
+    Stuff2
 

@@ -4,6 +4,7 @@ Resource        keywords.robot
 Library         Library.py
 Variables       variables.py
 Library         RPA.Desktop
+Library         OperatingSystem
 
 
 *** Keyword ***
@@ -70,30 +71,41 @@ Forma5
     #Click    image:%{ROBOT_ROOT}/.images/ubuntu-searchapp-path.png
     #Type text     Terminal    enter=True
 
+*** Keyword ***
+Extra  
+    #To execute a .py file name touch.py that is in the Desktop folder
+    Type text     cd Desktop    enter=True
+    Sleep    1s
+    Type text     python3 touch.py    enter=True
+    Sleep    2s
+
+# +
 *** Tasks ***
 Example task
     Example Keyword
     Example Python Keyword
     
     #Con esto abro la consola, deberia servir tambien CTRL+ALT+T, pero no...
-    Click    alias:Ubuntu.Terminal
-    Sleep    3s
-    Type text     ls    enter=True
+    #Click    alias:Ubuntu.Terminal
+    #Sleep    3s
+    #Type text     ls    enter=True
     
-    Forma1
-    Type text     ls    enter=True
-    Sleep    2s
-    Forma2
-    Type text     ls    enter=True
-    Sleep    2s
+    #Forma1
+    #Type text     ls    enter=True
+    #Sleep    2s
+    #Forma2
+    #Type text     ls    enter=True
+    #Sleep    2s
     #Forma3
-    Forma4    
-    Sleep    2s
+    #Forma4    
+    #Sleep    2s
     #Forma5
+    #Extra
     
-    #To execute a .py file name touch.py that is in the Desktop folder
-    Type text     cd Desktop    enter=True
-    Sleep    1s
-    Type text     python3 touch.py    enter=True
-    Sleep    2s
+    ${output}=    Run    ls
+    Log    ${output}
+    
+    
+
+
 

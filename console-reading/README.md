@@ -6,7 +6,9 @@ This Robot opens the Ubuntu console via OCR, later it writes `sudo lshw` and sel
 
 Afterwards, it remove extra information from the copied values, and last it search for the word in `${buscar}`.
 
-Note: it is far more easy to use `sudo lshw > text_from_terminal.txt` and then read that file, but this was a test. Also, you can do this with mostly the same code.
+Note: it is easier to use `sudo lshw > text_from_terminal.txt` and then read that file, but this was a test. Also, you can do this with mostly the same code.
+
+Note 2: its far more easy to use the library OperatingSystem or Process. Check the `run_process_example` to see how to use it.
 
 
 ### Configuration

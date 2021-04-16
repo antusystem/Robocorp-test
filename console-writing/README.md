@@ -11,7 +11,12 @@ This Robot opens the Ubuntu console via OCR, later it writes `ls`, then it prese
 - The last one should be the quickest way but for some reason it does not work. It presses `ctrl`+`alt`+`t` to open directly the terminal, but it does not do it. Later it tries pressing the win/Super key from the keyboard and tries to type `gnome-terminal` to open the terminal, but again, it does not work. 
 
 
-The last part of the code shows how to run a `.py` file with the terminal
+The last part of the code shows how to run a `.py` file with the terminal.
+
+Note: it is easier to use `sudo lshw > text_from_terminal.txt` and then read that file, but this was a test. Also, you can do this with mostly the same code.
+
+Note 2: its far more easy to use the library OperatingSystem or Process. Check the `run_process_example` to see how to use it.
+
 
  
 ### Additional documentation
